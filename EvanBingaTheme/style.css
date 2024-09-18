@@ -1,0 +1,476 @@
+/*
+Theme Name:EvanBingaTheme
+Author: Evan
+*/
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; 
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0; 
+}
+
+/* Контейнер для всего содержимого хедера */
+.header-container {
+    max-width: 1280px; /* Максимальная ширина контейнера */
+    width: 100%;
+    margin: 0 auto; /* Центровка контейнера */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.mobile-box{
+    display: flex;
+}
+
+/* Меню */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 83px; /* Отступ между меню и блоком с кнопками */
+}
+
+/* Пункты меню */
+.menu li {
+    margin-right: 32px; /* Отступ между пунктами меню */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333; /* Цвет текста ссылок */
+    font-size: 16px; /* Размер шрифта */
+    display: inline-block;
+}
+
+
+.menu li a:hover {
+    color: #CE2C01;
+    transition: 0.3s;
+}
+
+
+/* Контейнер для телефона и кнопки */
+.callback-box {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Отступ между элементами */
+}
+
+/* Стили для ссылки с номером телефона */
+.phone-number {
+    font-size: 16px; /* Размер шрифта */
+    text-decoration: none;
+    color: #333; /* Цвет текста */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.heart-icon {
+    width: 24px; /* Ширина иконки */
+    height: auto; /* Высота иконки автоматически сохраняется пропорционально */
+    margin-right: 8px; /* Отступ между иконкой и текстом */
+}
+
+/* Кнопка */
+button {
+    background-color: #CE2C01; 
+    color: white; 
+    border: none;
+    width: 162px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-icon{
+    margin-right: 10px;
+}
+
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.button-container{
+display: flex;
+height: 56px;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CE2C01;
+    width: 580px;
+    height: 660px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.banner-left h1 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.banner-left p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.banner-btn {
+    display: flex;
+    background-color: white;
+    color: #ff0000;
+    font-size: 16px;
+    height: 56px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 130px;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrows {
+    margin-top: 18px;
+    display: flex;
+    gap: 40px;
+    margin-left: 35px;
+}
+
+.arrows span {
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    padding-left: 1px;
+    cursor: pointer;
+    width: 20px;
+    height: 21px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.banner-slide {
+    display: none;
+}
+
+.banner-slide.active {
+    display: block;
+}
+.banner-right {
+    position: relative;
+    width: 660px;
+    height: 660px;
+    margin-left: 40px;
+}
+
+.banner-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+    display: none;
+}
+
+.banner-right img.active {
+    display: block;
+}
+
+.circle-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle:hover {
+    background-color: #ff0000;
+}
+
+footer {
+    background-color: #000; /* Черный фон */
+    padding: 40px 0;
+    text-align: center; /* Центрирование текста */
+    display: flex;
+    flex-direction: column;
+    height: 396px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+.logo-footer{
+    position: relative;
+    top: -50px;
+}
+
+
+.logo-footer ul li a {
+   color: white;
+   margin-left: 32px;
+}
+
+.logo-footer ul {
+   margin-top: 55px;
+ }
+
+ #menu-social-menu{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    margin-top: 40px;
+}
+
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-right: 0;
+        margin-bottom: 20px; /* Отступ между меню и блоком с кнопками для мобильных устройств */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu li {
+        margin-bottom: 10px; /* Отступ между пунктами меню для мобильных устройств */
+        margin-right: 0;
+    }
+
+    .callback-box{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+.heart-icon{
+    display: none;
+}
+    .phone-number, button {
+        margin-bottom: 10px; /* Отступ между элементами для мобильных устройств */
+    }
+}
+
+/* Стили для бургер-меню */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.burger-bar {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Изменения для анимации превращения в крестик */
+.burger-menu.active .burger-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.active .burger-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active .burger-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Скрытие меню по умолчанию на мобильных устройствах */
+.menu {
+    display: flex;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+}
+
+/* Скрываем модальное окно по умолчанию */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контент модального окна */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Стили для кнопки закрытия */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px;
+    background-color: #CE2C01;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: gray;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .banner-container{
+        display: inline-block;
+    }
+
+    .mobile-box{
+        display: flex;
+    }
+    .burger-menu {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        height: 35px;
+        width: 70px;
+        z-index: 999999999;
+    }
+
+ 
+    .menu {
+        display: none; /* Скрыть меню по умолчанию */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #ffffff;
+        height: 300vw;
+        width: 100%;
+        color: rgb(0, 0, 0);
+        padding: 10px 0;
+        text-align: center;
+        z-index: 999999;
+    }
+
+    .menu-container ul li a{
+   
+        color: rgb(0, 0, 0);
+       
+    }
+
+
+    .menu.active {
+        display: flex; /* Показать меню при клике на бургер */
+    }
+
+    .menu-item {
+        padding: 10px 0;
+    }
+
+    .banner-left{
+        width: 100%;
+    }
+
+    .banner-right{
+        width: 100%;
+        margin: 0;
+    }
+
+    #menu-social-menu{
+        display: none;
+    }
+
+    footer{
+        height: 250px;
+    }
+}
