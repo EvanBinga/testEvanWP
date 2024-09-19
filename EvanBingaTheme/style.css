@@ -16,11 +16,10 @@ header {
     padding: 10px 0; 
 }
 
-/* Контейнер для всего содержимого хедера */
 .header-container {
-    max-width: 1280px; /* Максимальная ширина контейнера */
+    max-width: 1280px; 
     width: 100%;
-    margin: 0 auto; /* Центровка контейнера */
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -37,18 +36,18 @@ header {
     padding: 0;
     display: flex;
     align-items: center;
-    margin-right: 83px; /* Отступ между меню и блоком с кнопками */
+    margin-right: 83px; 
 }
 
 /* Пункты меню */
 .menu li {
-    margin-right: 32px; /* Отступ между пунктами меню */
+    margin-right: 32px; 
 }
 
 .menu li a {
     text-decoration: none;
-    color: #333; /* Цвет текста ссылок */
-    font-size: 16px; /* Размер шрифта */
+    color: #333;
+    font-size: 16px;
     display: inline-block;
 }
 
@@ -59,30 +58,29 @@ header {
 }
 
 
-/* Контейнер для телефона и кнопки */
+
 .callback-box {
     display: flex;
     align-items: center;
-    gap: 20px; /* Отступ между элементами */
+    gap: 20px; 
 }
 
 /* Стили для ссылки с номером телефона */
 .phone-number {
-    font-size: 16px; /* Размер шрифта */
+    font-size: 16px; 
     text-decoration: none;
-    color: #333; /* Цвет текста */
+    color: #333;
     display: flex;
     align-items: center;
     position: relative;
 }
 
 .heart-icon {
-    width: 24px; /* Ширина иконки */
-    height: auto; /* Высота иконки автоматически сохраняется пропорционально */
-    margin-right: 8px; /* Отступ между иконкой и текстом */
+    width: 24px;
+    height: auto;
+    margin-right: 8px; 
 }
 
-/* Кнопка */
 button {
     background-color: #CE2C01; 
     color: white; 
@@ -273,7 +271,7 @@ main{
     }
 
     .menu li {
-        margin-bottom: 10px; /* Отступ между пунктами меню для мобильных устройств */
+        margin-bottom: 10px; 
         margin-right: 0;
     }
 
@@ -286,7 +284,7 @@ main{
     display: none;
 }
     .phone-number, button {
-        margin-bottom: 10px; /* Отступ между элементами для мобильных устройств */
+        margin-bottom: 10px;
     }
 }
 
@@ -310,7 +308,6 @@ main{
     transition: all 0.3s ease;
 }
 
-/* Изменения для анимации превращения в крестик */
 .burger-menu.active .burger-bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -323,7 +320,6 @@ main{
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Скрытие меню по умолчанию на мобильных устройствах */
 .menu {
     display: flex;
 }
@@ -334,7 +330,6 @@ main{
     margin-left: 140px;
 }
 
-/* Скрываем модальное окно по умолчанию */
 .modal {
     display: none;
     position: fixed;
@@ -348,7 +343,6 @@ main{
     align-items: center;
 }
 
-/* Контент модального окна */
 .modal-content {
     background-color: white;
     padding: 20px;
@@ -358,7 +352,6 @@ main{
     position: relative;
 }
 
-/* Стили для кнопки закрытия */
 .close {
     position: absolute;
     top: 10px;
@@ -367,7 +360,6 @@ main{
     cursor: pointer;
 }
 
-/* Стили для формы */
 form {
     display: flex;
     flex-direction: column;
